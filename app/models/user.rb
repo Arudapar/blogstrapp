@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  rolify :role_cname => 'Roler'
   has_many :articles, dependent: :destroy
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable, :trackable and :omniauthable
